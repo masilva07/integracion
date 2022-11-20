@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  server_node:
+    container_name: server_container
+    restart: always
+    build: .
+    ports:
+      - 5000:3000
+    links:
+      - mongo_db
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    command: bash -c "npm run dev"
+  mongo_db:
+    container_name: mongo_db
+    image: mongo:6.0.2
+    ports:
+      - 6000:27017
+    logging:
+      driver: none
