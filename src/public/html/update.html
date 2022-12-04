@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/index.css" />
+        <title>Actualizar Usuarios</title>
+    </head>
+    <body>
+        <h1>Actualizar Usuario</h1>
+        <a href="../index.html"><button>Volver al Menù</button></a>
+        <form id="formulario">
+            <label for="id">Id:</label>
+            <input
+                type="text"
+                placeholder="Id del usuario a modificar"
+                name="id"
+                id="id"
+                required
+            />
+            <label for="nombre">Nombre:</label>
+            <input
+                type="text"
+                placeholder="Nombre del usuario"
+                name="nombre"
+                id="nombre"
+                required
+            />
+            <label for="correo">Email:</label>
+            <input
+                type="correo"
+                name="correo"
+                id="correo"
+                placeholder="usuario@email.com"
+                required
+            />
+            <input type="submit" value="Actualizar" />
+        </form>
+        <h3 id="feedback"></h3>
+        <script src="../js/update.js"></script>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+h1 {
+    color: #457b9d;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 2%;
+    color: #457b9d;
+    text-align: center;
+}
+
+a {
+    width: fit-content;
+}
+
+.buttons {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 3%;
+    cursor: pointer;
+    color: #457b9d;
+    border: 1px solid #457b9d;
+    background-color: #f1faee;
+    margin: 2%;
+    min-width: 150px;
+    font-weight: bolder;
+}
+
+form {
+    padding: 3%;
+    border: 1px solid #457b9d;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+label {
+    margin-top: 3%;
+    width: 90%;
+    text-align: start;
+    color: #457b9d;
+    font-weight: bolder;
+}
+
+input {
+    width: 90%;
+    margin-top: 1%;
+    padding: 2%;
+}
+
+input[type="submit"] {
+    padding: 3%;
+    cursor: pointer;
+    color: #f1faee;
+    border: none;
+    background-color: #1d3557;
+    margin: 2%;
+    min-width: 150px;
+    margin-top: 5%;
+    font-weight: bolder;
+}
+
+input[value="Borrar"] {
+    padding: 3%;
+    cursor: pointer;
+    color: #f1faee;
+    border: none;
+    background-color: #e63946;
+    margin: 2%;
+    min-width: 150px;
+    margin-top: 5%;
+    font-weight: bolder;
+}
+
+#listado_usuarios {
+    padding: 3%;
+    border: 1px solid #457b9d;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+#listado_usuarios > li {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1%;
+    border: 1px solid #457b9d;
+    padding: 2% 1%;
+    color: #457b9d;
+}
+
+#feedback {
+    color: #457b9d;
+    text-align: center;
+    margin-top: 3%;
+}
