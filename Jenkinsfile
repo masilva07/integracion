@@ -4,7 +4,7 @@ pipeline {
     nodejs '18'
   }
   options {
-    timeout(time: 2, unit: 'MINUTES')
+    timeout(time: 3, unit: 'MINUTES')
   }
   stages {
     stage('Installa dependencies') {
