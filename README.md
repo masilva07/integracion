@@ -15,13 +15,13 @@ El proyecto es un REST server con arquitectura cliente-servidor, que se encargar
 
 ## Instalación:
 
-Nos dirigimos a la carpeta del proyecto y construimos la imagen de docker
+Nos dirigimos a la carpeta del proyecto y construimos la imagen de docker.
 
 ```bash
   docker-compose build
 ```
 
-Levantamos el compose de docker para correr los contenedores
+Levantamos el compose de docker para correr los contenedores.
 
 ```bash
   docker-compose up
