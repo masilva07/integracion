@@ -12,6 +12,11 @@ pipeline {
         bat 'npm i'
       }
     }
+    stage('down docker') {
+      steps {
+        bat 'docker-compose down'
+      }
+    }
     stage('build docker') {
       steps {
         bat 'docker-compose build'
