@@ -13,7 +13,7 @@ El proyecto es un REST server con arquitectura cliente-servidor, que se encargar
 -   MongoDB 6.0.2
 -   HTML - CSS - JS
 
-## Instalaciòn:
+## Instalación:
 
 Nos dirigimos a la carpeta del proyecto y construimos la imagen de docker
 
