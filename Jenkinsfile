@@ -1,11 +1,26 @@
 pipeline {
   agent any
+  tools {
+    nodejs '18'
+  }
+  options {
+    timeout(time: 2, unit: 'MINUTES')
+  }
   stages {
-    stage('CheckOut Repo') {
+    stage('Installa dependencies') {
       steps {
-        git(url: 'https://github.com/masilva07/integracion', branch: 'main')
+        bat 'npm i'
       }
     }
-
+    stage('build docker') {
+      steps {
+        bat 'docker-compose build'
+      }
+    }
+    stage('build docker') {
+      steps {
+        bat 'docker-compose up'
+      }
+    }
   }
 }
